@@ -1,0 +1,37 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.picochain.config.FilterProperties",
+      "name": "picochain.filter",
+      "type": "com.picochain.config.FilterProperties"
+    },
+    {
+      "sourceType": "com.picochain.config.JwtProperties",
+      "name": "picochain.jwt",
+      "type": "com.picochain.config.JwtProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.picochain.config.FilterProperties",
+      "name": "picochain.filter.allow-paths",
+      "type": "java.util.List<java.lang.String>"
+    },
+    {
+      "sourceType": "com.picochain.config.JwtProperties",
+      "name": "picochain.jwt.cookie-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.picochain.config.JwtProperties",
+      "name": "picochain.jwt.pub-key-path",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.picochain.config.JwtProperties",
+      "name": "picochain.jwt.public-key",
+      "type": "java.security.PublicKey"
+    }
+  ]
+}

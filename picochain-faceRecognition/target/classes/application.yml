@@ -1,0 +1,19 @@
+server:
+  port: 9094
+spring:
+  application:
+    name: faceRecognition-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10100/eureka
+    registry-fetch-interval-seconds: 10
+  instance:
+    lease-renewal-interval-in-seconds: 5 # 每隔5秒发送一次心跳
+    lease-expiration-duration-in-seconds: 10 # 10秒不发送就过期
+picochain:
+  facerecognition:
+    appId: 2a1GRPiMNMK8PRnCoc4RrBG3bbSNTtazGY72dCYf2YUz # 你自己的appId
+    sdkKey: EvHeBdktVo3ptJ2bMCousSsXEJvUGqHvuVMpJwZ1WQjA # 你自己的sdkKey
+    faceEnginePath: F:\ArcSoft_ArcFace_Java_Windows_x64_V2.2\libs\WIN64 # 引擎路径
+    threshold: 0.90 # 人脸识别阈值

@@ -1,0 +1,32 @@
+server:
+  port: 10200
+spring:
+  application:
+    name: picochain-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10100/eureka
+    registry-fetch-interval-seconds: 5
+zuul:
+  prefix: /api
+  retryable: true
+  routes:
+    user-service: /user/**
+    auth-service: /auth/**
+    faceRecognition-service: /face/**
+  ignored-services: upload-service
+  add-host-header: true #携带请求自身的head头信息
+  sensitive-headers: #配置禁止使用的头信息，这里设置为null，否则set-cookie无效
+picochain:
+  jwt:
+    pubKeyPath: F:\\tmp\\rsa\\rsa.pub # 公钥地址
+    cookieName: PC_TOKEN # cookie的名称
+  filter:
+    allowPaths:
+      - /api/auth
+      - /api/user/register
+      - /api/user/check
+      - /api/user/sendCode
+      - /api/user/query
+      - /api/face/verifyFace

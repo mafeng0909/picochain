@@ -1,0 +1,53 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.picochain.auth.config.JwtProperties",
+      "name": "picochain.jwt",
+      "type": "com.picochain.auth.config.JwtProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.picochain.auth.config.JwtProperties",
+      "name": "picochain.jwt.cookie-max-age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.picochain.auth.config.JwtProperties",
+      "name": "picochain.jwt.cookie-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.picochain.auth.config.JwtProperties",
+      "defaultValue": 0,
+      "name": "picochain.jwt.expire",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.picochain.auth.config.JwtProperties",
+      "name": "picochain.jwt.pri-key-path",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.picochain.auth.config.JwtProperties",
+      "name": "picochain.jwt.private-key",
+      "type": "java.security.PrivateKey"
+    },
+    {
+      "sourceType": "com.picochain.auth.config.JwtProperties",
+      "name": "picochain.jwt.pub-key-path",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.picochain.auth.config.JwtProperties",
+      "name": "picochain.jwt.public-key",
+      "type": "java.security.PublicKey"
+    },
+    {
+      "sourceType": "com.picochain.auth.config.JwtProperties",
+      "name": "picochain.jwt.secret",
+      "type": "java.lang.String"
+    }
+  ]
+}

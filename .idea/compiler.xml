@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="com.picochain.sms" />
+        <module name="picochain-sms-service" />
+        <module name="picochain-auth-common" />
+        <module name="picochain-user-interface" />
+        <module name="picochain-user-service" />
+        <module name="picochain-register" />
+        <module name="picochain-common" />
+        <module name="picochain-auth-service" />
+        <module name="picochain-faceRecognition" />
+        <module name="picochain-gateway" />
+        <module name="picochain-upload" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com.picochain.sms" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="com.picochain.sms" options="-parameters" />
+      <module name="picochain-auth" options="-parameters" />
+      <module name="picochain-auth-common" options="-parameters" />
+      <module name="picochain-auth-service" options="-parameters" />
+      <module name="picochain-common" options="-parameters" />
+      <module name="picochain-faceRecognition" options="-parameters" />
+      <module name="picochain-gateway" options="-parameters" />
+      <module name="picochain-register" options="-parameters" />
+      <module name="picochain-sms-service" options="-parameters" />
+      <module name="picochain-upload" options="-parameters" />
+      <module name="picochain-user" options="-parameters" />
+      <module name="picochain-user-interface" options="-parameters" />
+      <module name="picochain-user-service" options="-parameters" />
+    </option>
+  </component>
+</project>

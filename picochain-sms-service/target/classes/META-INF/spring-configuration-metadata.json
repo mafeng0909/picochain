@@ -1,0 +1,32 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.picochain.sms.config.SmsProperties",
+      "name": "picochain.sms",
+      "type": "com.picochain.sms.config.SmsProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.picochain.sms.config.SmsProperties",
+      "name": "picochain.sms.access-key-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.picochain.sms.config.SmsProperties",
+      "name": "picochain.sms.access-key-secret",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.picochain.sms.config.SmsProperties",
+      "name": "picochain.sms.sign-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.picochain.sms.config.SmsProperties",
+      "name": "picochain.sms.verify-code-template",
+      "type": "java.lang.String"
+    }
+  ]
+}

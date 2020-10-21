@@ -1,0 +1,26 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: user-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/picochain?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+  redis:
+    host: 192.168.111.128
+  rabbitmq:
+    host: 192.168.111.128
+    username: mafeng
+    password: mafeng
+    virtual-host: /picochain
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10100/eureka
+  instance:
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+mybatis:
+  type-aliases-package: com.picochain.user.pojo
