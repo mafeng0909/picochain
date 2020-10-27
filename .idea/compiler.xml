@@ -13,11 +13,11 @@
         <module name="picochain-user-interface" />
         <module name="picochain-user-service" />
         <module name="picochain-register" />
-        <module name="picochain-common" />
         <module name="picochain-auth-service" />
         <module name="picochain-faceRecognition" />
-        <module name="picochain-gateway" />
         <module name="picochain-upload" />
+        <module name="picochain-gateway" />
+        <module name="picochain-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

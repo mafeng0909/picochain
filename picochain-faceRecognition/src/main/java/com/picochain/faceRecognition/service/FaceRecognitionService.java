@@ -5,6 +5,7 @@ import com.picochain.faceRecognition.config.FaceRecognitionProperties;
 import com.picochain.faceRecognition.util.FaceRecognitionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,11 +16,15 @@ import org.springframework.stereotype.Service;
 @EnableConfigurationProperties(FaceRecognitionProperties.class)
 public class FaceRecognitionService {
 
+    private final StringRedisTemplate redisTemplate;
     private final FaceRecognitionUtils faceRecognitionUtils;
     private final FaceRecognitionProperties props;
 
+    private static final String KEY_PREFIX = "face:compare:result";
+
     @Autowired
-    public FaceRecognitionService(FaceRecognitionUtils faceRecognitionUtils, FaceRecognitionProperties props) {
+    public FaceRecognitionService(StringRedisTemplate redisTemplate, FaceRecognitionUtils faceRecognitionUtils, FaceRecognitionProperties props) {
+        this.redisTemplate = redisTemplate;
         this.faceRecognitionUtils = faceRecognitionUtils;
         this.props = props;
     }
@@ -44,6 +49,9 @@ public class FaceRecognitionService {
 
         // 4、关闭引擎
         faceRecognitionUtils.faceEngineClose();
+
+        // 5、存储比对结果
+        redisTemplate.opsForValue().set(KEY_PREFIX, String.valueOf(v));
 
         return v >= props.getThreshold();
     }
