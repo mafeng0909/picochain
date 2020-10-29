@@ -51,8 +51,11 @@ public class FaceRecognitionService {
         faceRecognitionUtils.faceEngineClose();
 
         // 5、存储比对结果
-        redisTemplate.opsForValue().set(KEY_PREFIX, String.valueOf(v));
+        boolean res = v >= props.getThreshold();
+        if (res) {
+            redisTemplate.opsForValue().set(KEY_PREFIX, String.valueOf(v));
+        }
 
-        return v >= props.getThreshold();
+        return res;
     }
 }

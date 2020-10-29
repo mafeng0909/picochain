@@ -18,13 +18,17 @@ zuul:
   ignored-services: upload-service
   add-host-header: true #携带请求自身的head头信息
   sensitive-headers: #配置禁止使用的头信息，这里设置为null，否则set-cookie无效
+ribbon:
+  ReadTimeout: 3000
+  ConnectTimeout: 3000
 picochain:
   jwt:
-    pubKeyPath: F:\\tmp\\rsa\\rsa.pub # 公钥地址
+    pubKeyPath: /home/mafeng/rsa/rsa.pub # 公钥地址
     cookieName: PC_TOKEN # cookie的名称
   filter:
     allowPaths:
-      - /api/auth
+      - /api/auth/accredit
+      - /api/auth/verify
       - /api/user/register
       - /api/user/check
       - /api/user/sendCode

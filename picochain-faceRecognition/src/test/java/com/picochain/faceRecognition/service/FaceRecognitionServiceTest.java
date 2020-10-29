@@ -21,8 +21,8 @@ public class FaceRecognitionServiceTest {
 
     @Test
     public void setFaceRecognitionServiceTest() {
-        String path1 = "F:\\ArcSoft_ArcFace_Java_Windows_x64_V2.2\\picture\\001-mafeng.jpg";
-        String path2 = "F:\\ArcSoft_ArcFace_Java_Windows_x64_V2.2\\picture\\003-mafeng.jpg";
+        String path1 = "/home/mafeng/IdeaProjects/picochain-web/src/picture/001-mafeng.jpg";
+        String path2 = "/home/mafeng/IdeaProjects/picochain-web/src/picture/003-mafeng.jpg";
         boolean b = faceRecognitionService.verifyFace(path1, path2);
         System.out.println(b);
     }

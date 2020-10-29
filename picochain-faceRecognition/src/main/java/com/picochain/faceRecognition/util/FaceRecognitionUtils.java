@@ -44,17 +44,29 @@ public class FaceRecognitionUtils {
      */
     public void faceEngineConfig() {
 
-        //激活引擎
-        int activeCode = faceEngine.activeOnline(props.getAppId(), props.getSdkKey());
+        //从官网获取
+        String appId = props.getAppId();
+        String sdkKey = props.getSdkKey();
 
-        if (activeCode != ErrorInfo.MOK.getValue() && activeCode != ErrorInfo.MERR_ASF_ALREADY_ACTIVATED.getValue()) {
-            logger.error("引擎激活失败");
+        //激活引擎
+        int errorCode = faceEngine.activeOnline(appId, sdkKey);
+
+        if (errorCode != ErrorInfo.MOK.getValue() && errorCode != ErrorInfo.MERR_ASF_ALREADY_ACTIVATED.getValue()) {
+            System.out.println("引擎激活失败");
+        }
+
+        ActiveFileInfo activeFileInfo = new ActiveFileInfo();
+        errorCode = faceEngine.getActiveFileInfo(activeFileInfo);
+        if (errorCode != ErrorInfo.MOK.getValue() && errorCode != ErrorInfo.MERR_ASF_ALREADY_ACTIVATED.getValue()) {
+            System.out.println("获取激活文件信息失败");
         }
 
         //引擎配置
         EngineConfiguration engineConfiguration = new EngineConfiguration();
         engineConfiguration.setDetectMode(DetectMode.ASF_DETECT_MODE_IMAGE);
-        engineConfiguration.setDetectFaceOrientPriority(DetectOrient.ASF_OP_0_ONLY);
+        engineConfiguration.setDetectFaceOrientPriority(DetectOrient.ASF_OP_ALL_OUT);
+        engineConfiguration.setDetectFaceMaxNum(10);
+        engineConfiguration.setDetectFaceScaleVal(16);
 
         //功能配置
         FunctionConfiguration functionConfiguration = new FunctionConfiguration();
@@ -68,10 +80,10 @@ public class FaceRecognitionUtils {
         engineConfiguration.setFunctionConfiguration(functionConfiguration);
 
         //初始化引擎
-        int initCode = faceEngine.init(engineConfiguration);
+        errorCode = faceEngine.init(engineConfiguration);
 
-        if (initCode != ErrorInfo.MOK.getValue()) {
-            logger.error("初始化引擎失败");
+        if (errorCode != ErrorInfo.MOK.getValue()) {
+            System.out.println("初始化引擎失败");
         }
     }
 
@@ -82,15 +94,16 @@ public class FaceRecognitionUtils {
      * @return
      */
     public FaceFeature getFaceFeature(String picturePath) {
+
         //人脸检测
         ImageInfo imageInfo = getRGBData(new File(picturePath));
         List<FaceInfo> faceInfoList = new ArrayList<>();
-        faceEngine.detectFaces(imageInfo.getImageData(), imageInfo.getWidth(), imageInfo.getHeight(), ImageFormat.CP_PAF_BGR24, faceInfoList);
+        faceEngine.detectFaces(imageInfo.getImageData(), imageInfo.getWidth(), imageInfo.getHeight(), imageInfo.getImageFormat(), faceInfoList);
         logger.debug("{}", faceInfoList);
 
         //特征提取
         FaceFeature faceFeature = new FaceFeature();
-        faceEngine.extractFaceFeature(imageInfo.getImageData(), imageInfo.getWidth(), imageInfo.getHeight(), ImageFormat.CP_PAF_BGR24, faceInfoList.get(0), faceFeature);
+        faceEngine.extractFaceFeature(imageInfo.getImageData(), imageInfo.getWidth(), imageInfo.getHeight(), imageInfo.getImageFormat(), faceInfoList.get(0), faceFeature);
         logger.debug("特征值大小：{}", faceFeature.getFeatureData().length);
 
         return faceFeature;
@@ -104,6 +117,8 @@ public class FaceRecognitionUtils {
      * @return
      */
     public float faceEqual(FaceFeature faceFeature1, FaceFeature faceFeature2) {
+
+        //特征比对
         FaceFeature targetFaceFeature = new FaceFeature();
         targetFaceFeature.setFeatureData(faceFeature1.getFeatureData());
         FaceFeature sourceFaceFeature = new FaceFeature();
@@ -111,6 +126,7 @@ public class FaceRecognitionUtils {
 
         FaceSimilar faceSimilar = new FaceSimilar();
         faceEngine.compareFaceFeature(targetFaceFeature, sourceFaceFeature, faceSimilar);
+
         logger.info("相似度：{}", faceSimilar.getScore());
 
         return faceSimilar.getScore();

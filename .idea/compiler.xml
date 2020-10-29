@@ -7,17 +7,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="picochain-upload" />
+        <module name="picochain-common" />
         <module name="com.picochain.sms" />
+        <module name="picochain-faceRecognition" />
+        <module name="picochain-user-service" />
+        <module name="picochain-user-interface" />
         <module name="picochain-sms-service" />
         <module name="picochain-auth-common" />
-        <module name="picochain-user-interface" />
-        <module name="picochain-user-service" />
         <module name="picochain-register" />
         <module name="picochain-auth-service" />
-        <module name="picochain-faceRecognition" />
-        <module name="picochain-upload" />
         <module name="picochain-gateway" />
-        <module name="picochain-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

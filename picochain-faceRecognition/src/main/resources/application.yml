@@ -4,7 +4,7 @@ spring:
   application:
     name: faceRecognition-service
   redis:
-    host: 192.168.111.128
+    host: 127.0.0.1
 eureka:
   client:
     service-url:
@@ -16,6 +16,6 @@ eureka:
 picochain:
   facerecognition:
     appId: 2a1GRPiMNMK8PRnCoc4RrBG3bbSNTtazGY72dCYf2YUz # 你自己的appId
-    sdkKey: EvHeBdktVo3ptJ2bMCousSsXEJvUGqHvuVMpJwZ1WQjA # 你自己的sdkKey
-    faceEnginePath: F:\ArcSoft_ArcFace_Java_Windows_x64_V2.2\libs\WIN64 # 引擎路径
+    sdkKey: EvHeBdktVo3ptJ2bMCousSsX6CML8YzyNADnoj4DfBWD # 你自己的sdkKey
+    faceEnginePath: /home/mafeng/ArcSoft_ArcFace_Java_Linux_x64_V3.0/libs/LINUX64/ # 引擎路径
     threshold: 0.90 # 人脸识别阈值
