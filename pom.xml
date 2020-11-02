@@ -16,6 +16,7 @@
         <module>picochain-auth</module>
         <module>picochain-upload</module>
         <module>picochain-faceRecognition</module>
+        <module>picochain-zksnark</module>
     </modules>
     <packaging>pom</packaging>
 

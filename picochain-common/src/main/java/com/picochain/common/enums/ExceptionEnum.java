@@ -20,6 +20,7 @@ public enum ExceptionEnum {
     UN_AUTHORIZED(403, "未授权"),
     FILE_UPLOAD_FAILED(500, "文件上传失败"),
     INVALID_FILE_TYPE(400, "无效的文件类型"),
+    PROOF_CREATE_FAILED(500, "证明生成失败"),
     ;
     private int id;
     private String msg;

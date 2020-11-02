@@ -12,6 +12,7 @@
         <module name="com.picochain.sms" />
         <module name="picochain-faceRecognition" />
         <module name="picochain-user-service" />
+        <module name="picochain-zksnark" />
         <module name="picochain-user-interface" />
         <module name="picochain-sms-service" />
         <module name="picochain-auth-common" />
@@ -39,6 +40,7 @@
       <module name="picochain-user" options="-parameters" />
       <module name="picochain-user-interface" options="-parameters" />
       <module name="picochain-user-service" options="-parameters" />
+      <module name="picochain-zksnark" options="-parameters" />
     </option>
   </component>
 </project>
