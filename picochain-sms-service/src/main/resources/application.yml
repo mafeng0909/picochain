@@ -12,7 +12,7 @@ spring:
     host: 127.0.0.1
 picochain:
   sms:
-    accessKeyId: LTAI4G4RDchvSdqSQGsKujAE # 你自己的accessKeyId
-    accessKeySecret: DrImPvAS92Xb0u80hgk4N4455mjOZo # 你自己的AccessKeySecret
+    accessKeyId:  # 你自己的accessKeyId
+    accessKeySecret:  # 你自己的AccessKeySecret
     signName: TeacherMa
     verifyCodeTemplate: SMS_191802640
