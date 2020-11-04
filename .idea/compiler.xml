@@ -15,10 +15,10 @@
         <module name="picochain-zksnark" />
         <module name="picochain-user-interface" />
         <module name="picochain-sms-service" />
-        <module name="picochain-auth-common" />
         <module name="picochain-register" />
         <module name="picochain-auth-service" />
         <module name="picochain-gateway" />
+        <module name="picochain-auth-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

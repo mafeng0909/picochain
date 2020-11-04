@@ -47,9 +47,9 @@ public class ZKSnarkService {
         Process process = null;
 
         String threshold = String.valueOf((int) (props.getThreshold() * 100));
-        String command2 = path + "sudoku prove " + path + "pk_data.raw " + threshold + " " + res + " " + path;
-        System.out.println(command2);
-        process = Runtime.getRuntime().exec(command2);
+        String command = path + "sudoku prove " + path + "pk_data.raw " + threshold + " " + res + " " + path;
+        System.out.println(command);
+        process = Runtime.getRuntime().exec(command);
         process.waitFor();
 
         InputStream is = process.getInputStream();

@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
@@ -25,6 +26,7 @@ import static com.arcsoft.face.toolkit.ImageFactory.getRGBData;
  * @data 2020/10/19
  **/
 @Slf4j
+@Primary
 @Component
 @EnableConfigurationProperties(FaceRecognitionProperties.class)
 public class FaceRecognitionUtils {

@@ -4,15 +4,15 @@ spring:
   application:
     name: sms-service
   rabbitmq:
-    host: 192.168.111.128
+    host: 127.0.0.1
     username: mafeng
     password: mafeng
     virtual-host: /picochain
   redis:
-    host: 192.168.111.128
+    host: 127.0.0.1
 picochain:
   sms:
-    accessKeyId: LTAI4G4RDchvSdqSQGsKujAE # 你自己的accessKeyId
-    accessKeySecret: DrImPvAS92Xb0u80hgk4N4455mjOZo # 你自己的AccessKeySecret
+    accessKeyId:  # 你自己的accessKeyId
+    accessKeySecret:  # 你自己的AccessKeySecret
     signName: TeacherMa
     verifyCodeTemplate: SMS_191802640
