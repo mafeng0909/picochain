@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/picochain-auth/picochain-auth-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-auth/picochain-auth-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-auth/picochain-auth-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/picochain-blockchain/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-faceRecognition/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-faceRecognition/src/main/resources" charset="UTF-8" />
@@ -13,12 +14,11 @@
     <file url="file://$PROJECT_DIR$/picochain-register/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-sms-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-sms-service/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/picochain-upload/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/picochain-upload/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-user/picochain-user-interface/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-user/picochain-user-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-user/picochain-user-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-zksnark/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/picochain-zksnark/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

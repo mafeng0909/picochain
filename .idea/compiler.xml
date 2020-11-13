@@ -7,22 +7,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="picochain-upload" />
         <module name="picochain-common" />
+        <module name="picochain-blockchain批次哦" />
+        <module name="picochain-zksnark" />
+        <module name="picochain-sms-service" />
+        <module name="picochain-register" />
+        <module name="picochain-gateway" />
+        <module name="picochain-auth-common" />
         <module name="com.picochain.sms" />
         <module name="picochain-faceRecognition" />
         <module name="picochain-user-service" />
-        <module name="picochain-zksnark" />
+        <module name="picochain-blockchain" />
         <module name="picochain-user-interface" />
-        <module name="picochain-sms-service" />
-        <module name="picochain-register" />
         <module name="picochain-auth-service" />
-        <module name="picochain-gateway" />
-        <module name="picochain-auth-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="com.picochain.sms" target="1.8" />
+      <module name="picochain-blockchain批次哦" target="1.8" />
+      <module name="picochain-upload" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -31,6 +34,8 @@
       <module name="picochain-auth" options="-parameters" />
       <module name="picochain-auth-common" options="-parameters" />
       <module name="picochain-auth-service" options="-parameters" />
+      <module name="picochain-blockchain" options="-parameters" />
+      <module name="picochain-blockchain批次哦" options="-parameters" />
       <module name="picochain-common" options="-parameters" />
       <module name="picochain-faceRecognition" options="-parameters" />
       <module name="picochain-gateway" options="-parameters" />

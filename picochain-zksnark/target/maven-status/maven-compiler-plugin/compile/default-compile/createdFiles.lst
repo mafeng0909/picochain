@@ -1,4 +1,4 @@
 com/picochain/PicoChainZkSnarkApplication.class
 com/picochain/config/ZKPProperties.class
-com/picochain/service/ZKSnarkService.class
 com/picochain/controller/ZKSnarkController.class
+com/picochain/service/ZKSnarkService.class

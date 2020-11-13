@@ -14,9 +14,9 @@
         <module>picochain-user</module>
         <module>picochain-sms-service</module>
         <module>picochain-auth</module>
-        <module>picochain-upload</module>
         <module>picochain-faceRecognition</module>
         <module>picochain-zksnark</module>
+        <module>picochain-blockchain</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -94,5 +94,15 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--                &lt;!&ndash;                <version>2.0.2.RELEASE</version>&ndash;&gt;-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
 
 </project>

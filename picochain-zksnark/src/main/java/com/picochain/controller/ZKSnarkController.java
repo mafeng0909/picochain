@@ -30,7 +30,7 @@ public class ZKSnarkController {
      *
      * @return
      */
-    @GetMapping("generate")
+    @GetMapping("generateProof")
     public ResponseEntity<Boolean> generateProof() throws IOException, InterruptedException {
         return ResponseEntity.ok(zkSnarkService.generateProof());
     }

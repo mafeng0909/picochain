@@ -1,7 +1,7 @@
 /home/mafeng/IdeaProjects/picochain/picochain-common/src/main/java/com/picochain/common/enums/ExceptionEnum.java
 /home/mafeng/IdeaProjects/picochain/picochain-common/src/main/java/com/picochain/common/utils/IdWorker.java
-/home/mafeng/IdeaProjects/picochain/picochain-common/src/main/java/com/picochain/common/utils/JsonUtils.java
 /home/mafeng/IdeaProjects/picochain/picochain-common/src/main/java/com/picochain/common/vo/ExceptionResult.java
+/home/mafeng/IdeaProjects/picochain/picochain-common/src/main/java/com/picochain/common/utils/JsonUtils.java
 /home/mafeng/IdeaProjects/picochain/picochain-common/src/main/java/com/picochain/common/exception/PcException.java
 /home/mafeng/IdeaProjects/picochain/picochain-common/src/main/java/com/picochain/common/advice/CommonExceptionHandler.java
 /home/mafeng/IdeaProjects/picochain/picochain-common/src/main/java/com/picochain/common/utils/NumberUtils.java

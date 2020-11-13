@@ -1,5 +1,0 @@
-com/picochain/upload/controller/UploadController.class
-com/picochain/upload/service/UploadService.class
-com/picochain/upload/config/FastClientImporter.class
-com/picochain/upload/config/PicoChainCorsConfiguration.class
-com/picochain/PicoChainUploadApplication.class

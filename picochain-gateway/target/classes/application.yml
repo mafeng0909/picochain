@@ -16,7 +16,8 @@ zuul:
     auth-service: /auth/**
     faceRecognition-service: /face/**
     zksnark-service: /zksnark/**
-  ignored-services: upload-service
+    blockchain-service: /blockchain/**
+#  ignored-services: upload-service
   add-host-header: true #携带请求自身的head头信息
   sensitive-headers: #配置禁止使用的头信息，这里设置为null，否则set-cookie无效
 ribbon:
@@ -36,3 +37,4 @@ picochain:
       - /api/user/query
       - /api/face/verifyFace
       - /api/zksnark/generateProof
+      - /api/blockchain/transaction

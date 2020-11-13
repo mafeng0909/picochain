@@ -5,6 +5,7 @@ spring:
     name: zksnark-service
   redis:
     host: 127.0.0.1
+    password: mafeng
 eureka:
   client:
     service-url:
@@ -15,5 +16,5 @@ eureka:
     lease-expiration-duration-in-seconds: 10 # 10秒不发送就过期
 picochain:
   zkp:
-    path: /home/mafeng/ZKPDemo/shudu-zk-snarks/build/src/
+    path: /home/mafeng/ZKPDemo/sudoku-zk-snarks/build/src/
     threshold: 0.90 # 人脸识别阈值

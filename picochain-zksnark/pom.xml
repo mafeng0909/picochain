@@ -11,6 +11,7 @@
 
     <groupId>com.picochain.zksnark</groupId>
     <artifactId>picochain-zksnark</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
@@ -33,10 +34,10 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-redis</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.data</groupId>-->
+<!--            <artifactId>spring-data-redis</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>com.picochain.common</groupId>
             <artifactId>picochain-common</artifactId>

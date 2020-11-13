@@ -1,5 +1,5 @@
 com/picochain/faceRecognition/service/FaceRecognitionService.class
 com/picochain/faceRecognition/config/FaceRecognitionProperties.class
-com/picochain/faceRecognition/controller/FaceRecognitionController.class
 com/picochain/faceRecognition/util/FaceRecognitionUtils.class
+com/picochain/faceRecognition/controller/FaceRecognitionController.class
 com/picochain/PicoChainFaceRecognitionApplication.class
