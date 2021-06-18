@@ -132,4 +132,77 @@ public class UserService {
 
         return user;
     }
+
+    /**
+     * 根据用户名查询用户
+     * @param username
+     * @return
+     */
+    public User queryUser(String username) {
+
+        if (StringUtils.isBlank(username)) {
+            return null;
+        }
+        // 查询
+        User record = new User();
+        record.setUsername(username);
+
+        return userMapper.selectOne(record);
+    }
+
+    /**
+     *
+     * @param username
+     * @param oldPsw
+     * @param newPsw
+     * @return
+     */
+    public boolean changePsw(String username, String oldPsw, String newPsw) {
+
+        if (StringUtils.isBlank(username) || StringUtils.isBlank(oldPsw) || StringUtils.isBlank(newPsw)) {
+            log.error("信息不能为空!!!");
+            return false;
+        }
+
+        User record = new User();
+        record.setUsername(username);
+        User user = userMapper.selectOne(record);
+
+        String md5HexPsw = CodecUtils.md5Hex(oldPsw, user.getSalt());
+        if (!md5HexPsw.equals(user.getPassword())) {
+            log.error("");
+            return false;
+        }
+
+        String newMd5HexPsw = CodecUtils.md5Hex(newPsw, user.getSalt());
+        user.setPassword(newMd5HexPsw);
+
+        return userMapper.updateByPrimaryKeySelective(user) > 0;
+    }
+
+    /**
+     *
+     * @param username
+     * @param info
+     * @return
+     */
+    public boolean changeInfo(String username, String info, String data) {
+
+        if (StringUtils.isBlank(username) || StringUtils.isBlank(info) || StringUtils.isBlank(data)) {
+            log.error("信息不能为空!!!");
+            return false;
+        }
+
+        User record = new User();
+        record.setUsername(username);
+        User user = userMapper.selectOne(record);
+
+        if ("city".equals(info)) {
+            user.setCity(data);
+        }else if ("phone".equals(info)) {
+            user.setPhone(data);
+        }
+
+        return userMapper.updateByPrimaryKeySelective(user) > 0;
+    }
 }

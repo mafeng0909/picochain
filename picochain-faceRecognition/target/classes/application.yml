@@ -19,4 +19,9 @@ picochain:
     appId: 2a1GRPiMNMK8PRnCoc4RrBG3bbSNTtazGY72dCYf2YUz # 你自己的appId
     sdkKey: EvHeBdktVo3ptJ2bMCousSsX6CML8YzyNADnoj4DfBWD # 你自己的sdkKey
     faceEnginePath: /home/mafeng/ArcSoft_ArcFace_Java_Linux_x64_V3.0/libs/LINUX64/ # 引擎路径
-    threshold: 0.90 # 人脸识别阈值
+    threshold: 0.80 # 人脸识别阈值
+  idcardrecognition:
+    appId: 24142492  # 你自己的appId
+    appKey: G8pc8E8QSeElHxxLdhR5NSGP   # 你自己的appKey
+    secretKey: FmwDSPBXVuSqtY3V7vmULG2U95jGxZwY   # 你自己的secretKey
+    path: /home/mafeng/IdeaProjects/picochain-web/src/picture/   # 路径

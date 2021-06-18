@@ -6,12 +6,14 @@
     <file url="file://$PROJECT_DIR$/picochain-auth/picochain-auth-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-blockchain/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/picochain-exchange/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-faceRecognition/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-faceRecognition/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-register/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-register/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/picochain-share/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-sms-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-sms-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/picochain-user/picochain-user-interface/src/main/java" charset="UTF-8" />

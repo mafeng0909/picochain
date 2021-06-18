@@ -20,4 +20,4 @@ web3j:
   http-timeout-seconds: 600
 picochain:
   zkp:
-    path: /home/mafeng/ZKPDemo/sudoku-zk-snarks/build/src/proof_data
+    path: /home/mafeng/ZKPDemo/zk/proof_data

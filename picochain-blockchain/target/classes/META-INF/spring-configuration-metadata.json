@@ -1,0 +1,17 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.picochain.config.ProofProperties",
+      "name": "picochain.zkp",
+      "type": "com.picochain.config.ProofProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.picochain.config.ProofProperties",
+      "name": "picochain.zkp.path",
+      "type": "java.lang.String"
+    }
+  ]
+}

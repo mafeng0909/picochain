@@ -72,4 +72,43 @@ public class UserController {
     public ResponseEntity<User> queryUser(@RequestParam("username") String username, @RequestParam("password") String password) {
         return ResponseEntity.ok(userService.queryUser(username, password));
     }
+
+    /**
+     * 根据用户名查询用户
+     *
+     * @param username
+     * @return
+     */
+    @PostMapping("queryUser")
+    public ResponseEntity<User> queryUser(String username) {
+        return ResponseEntity.ok(userService.queryUser(username));
+    }
+
+    /**
+     *
+     * @param username
+     * @param oldPsw
+     * @param newPsw
+     * @return
+     */
+    @PostMapping("changePsw")
+    public ResponseEntity<Boolean> changePsw(@RequestParam("username") String username,
+                                             @RequestParam("oldPsw") String oldPsw,
+                                             @RequestParam("newPsw") String newPsw) {
+        return ResponseEntity.ok(userService.changePsw(username, oldPsw, newPsw));
+    }
+
+    /**
+     *
+     * @param username
+     * @param info
+     * @param data
+     * @return
+     */
+    @PostMapping("changeInfo")
+    public ResponseEntity<Boolean> changeInfo(@RequestParam("username") String username,
+                                              @RequestParam("info") String info,
+                                              @RequestParam("data") String data) {
+        return ResponseEntity.ok(userService.changeInfo(username, info, data));
+    }
 }

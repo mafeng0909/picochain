@@ -28,7 +28,17 @@ public class FaceRecognitionController {
      * @return
      */
     @PostMapping("verifyFace")
-    public ResponseEntity<Boolean> verifyFace(String path1, String path2) {
-        return ResponseEntity.ok(faceRecognitionService.verifyFace(path1, path2));
+    public ResponseEntity<Boolean> verifyFace() {
+        return ResponseEntity.ok(faceRecognitionService.verifyFace());
+    }
+
+    @PostMapping("uploadImage")
+    public ResponseEntity<Boolean> uploadImage(@RequestParam("pictureName") String pictureName) {
+        return ResponseEntity.ok(faceRecognitionService.uploadImage(pictureName));
+    }
+
+    @GetMapping("getIdCard")
+    public ResponseEntity<Integer> getIdCard() {
+        return ResponseEntity.ok(faceRecognitionService.getIdCard());
     }
 }

@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="picochain-common" />
+        <module name="picochain-exchange" />
         <module name="picochain-blockchain批次哦" />
         <module name="picochain-zksnark" />
         <module name="picochain-sms-service" />
@@ -18,6 +19,7 @@
         <module name="picochain-faceRecognition" />
         <module name="picochain-user-service" />
         <module name="picochain-blockchain" />
+        <module name="picochain-share" />
         <module name="picochain-user-interface" />
         <module name="picochain-auth-service" />
       </profile>
@@ -37,9 +39,11 @@
       <module name="picochain-blockchain" options="-parameters" />
       <module name="picochain-blockchain批次哦" options="-parameters" />
       <module name="picochain-common" options="-parameters" />
+      <module name="picochain-exchange" options="-parameters" />
       <module name="picochain-faceRecognition" options="-parameters" />
       <module name="picochain-gateway" options="-parameters" />
       <module name="picochain-register" options="-parameters" />
+      <module name="picochain-share" options="-parameters" />
       <module name="picochain-sms-service" options="-parameters" />
       <module name="picochain-upload" options="-parameters" />
       <module name="picochain-user" options="-parameters" />

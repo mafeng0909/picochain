@@ -18,3 +18,6 @@ web3j:
   client-address: http://127.0.0.1:8545
   admin-client: true
   http-timeout-seconds: 600
+picochain:
+  zkp:
+    path: /home/mafeng/ZKPDemo/zk/proof_data

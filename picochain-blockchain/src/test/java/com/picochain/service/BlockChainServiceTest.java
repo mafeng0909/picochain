@@ -34,10 +34,10 @@ public class BlockChainServiceTest {
 
     @Test
     public void test() throws CipherException, InvalidAlgorithmParameterException, NoSuchAlgorithmException, NoSuchProviderException, IOException {
-        File file = new File("/home/mafeng/wallet");
-        LOGGER.info("Generating wallet file...");
-        WalletUtils.generateNewWalletFile("mafeng0909", file, true);
-        Credentials credentials = WalletUtils.loadCredentials("mafeng0909", file);
+        File file = new File("/home/mafeng/ETHDBSpace/keystore/UTC--2020-11-13T09-13-17.443000000Z--dbc9804fd96900d027a5fc298b8238490a75789d.json");
+//        LOGGER.info("Generating wallet file...");
+//        WalletUtils.generateNewWalletFile("mafeng", file, true);
+        Credentials credentials = WalletUtils.loadCredentials("mafeng", file);
         LOGGER.info("Generating wallet file: {}", file);
         LOGGER.info("Generating account address: {}", credentials.getAddress());
         EthAccounts accounts = web3j.ethAccounts().send();

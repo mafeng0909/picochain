@@ -17,6 +17,8 @@
         <module>picochain-faceRecognition</module>
         <module>picochain-zksnark</module>
         <module>picochain-blockchain</module>
+        <module>picochain-exchange</module>
+        <module>picochain-share</module>
     </modules>
     <packaging>pom</packaging>
 

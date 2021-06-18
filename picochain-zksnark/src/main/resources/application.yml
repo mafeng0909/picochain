@@ -16,5 +16,5 @@ eureka:
     lease-expiration-duration-in-seconds: 10 # 10秒不发送就过期
 picochain:
   zkp:
-    path: /home/mafeng/ZKPDemo/sudoku-zk-snarks/build/src/
-    threshold: 0.90 # 人脸识别阈值
+    path: /home/mafeng/ZKPDemo/zk/
+    threshold: 0.80 # 人脸识别阈值
